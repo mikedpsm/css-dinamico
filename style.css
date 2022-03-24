@@ -6,7 +6,11 @@
 
 body {
   font-family: sans-serif;
-  --cor-principal: #dd7e24;
+  --color-main: #196626;
+  --color-background: #fff;
+  --color-text: #000;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 .flex {
@@ -37,7 +41,7 @@ ul {
 }
 
 ul .active {
-  color: var(--cor-principal);
+  color: var(--color-main);
 }
 
 section {
@@ -46,14 +50,27 @@ section {
 }
 
 section h1 {
-  color: var(--cor-principal);
+  color: var(--color-main);
+}
+
+button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.light {
+  padding: 6px;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
 }
 
 section button {
   all: unset;
   box-sizing: border-box;
   cursor: pointer;
-  background-color: var(--cor-principal);
+  background-color: var(--color-main);
   color: #fff;
   padding: 12px;
   align-self: flex-start;
